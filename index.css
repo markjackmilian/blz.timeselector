@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+li {
+    list-style-type: none;
+}
+
+.time-picker-input {
+    display: block;
+    width: 18rem;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0.75rem;
+    text-align: center;
+    font-size: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 2.5rem;
+    max-width: 18rem;
+    width: 100%;
+    margin: 1rem;
+    text-align: center;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.time-picker-column {
+    flex: 1;
+    max-width: 80px;
+    height: 18rem;
+    border-radius: 0.5rem;
+    background-color: #e5e7eb;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.primary-button {
+    background-color: #028900;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    transition: background-color 0.2s;
+    padding: 0.65rem 1rem;
+}
+
+.primary-button:hover {
+    background-color: #03bb00;
+}
+button {
+    cursor: pointer;
+}
+.secondary-button {
+    background-color: white;
+    color: #e22f13;
+    border: 1px solid #e22f13;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    padding: 0.65rem 1rem;
+}
+
+.secondary-button:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.time-picker-item {
+    font-size: 1.125rem;
+    line-height: 2.5rem;
+    color: #4b5563;
+    opacity: 0.3;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
+.time-picker-indicator {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    margin-top: -1.25rem;
+    border-top: 1px solid #d1d5db;
+    border-bottom: 1px solid #d1d5db;
+    pointer-events: none;
+}
+
+.selected-item {
+    color: black;
+    opacity: 1;
+}
+
+.time-picker-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
